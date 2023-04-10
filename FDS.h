@@ -35,7 +35,7 @@ void fU(double *U,double *f){
     //计算f(U)
     f[0] = U[1];
     f[1]=(g-1)*U[2]+0.5*(3-g)*U[1]*U[1]/U[0];
-    f[2]=g*U[2]*U[1]/U[0]+0.5*(g-1)*U[1]*U[1]*U[1]/(U[0]*U[0]);
+    f[2]=g*U[2]*U[1]/U[0]-0.5*(g-1)*U[1]*U[1]*U[1]/(U[0]*U[0]);
 }
 void Ubar(double *UL,double *UR,double *Ub){
     //用左值右值计算roe点
